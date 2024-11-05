@@ -15,7 +15,7 @@ jobs:
       - uses: astral-sh/setup-uv@v3
 
       - name: Build docs
-        run: uv run mkdocs build
+        run: uv run mkdocs build --strict
 
       - uses: actions/upload-pages-artifact@v3
         with:
